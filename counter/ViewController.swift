@@ -25,6 +25,15 @@ class ViewController: UIViewController {
         count = 0
         lab.text = "\(count)"
     }
+    @IBAction func btss(_ sender: Any) {
+        if color == 0{
+            self.view.backgroundColor=UIColor.gray
+            color = 1
+        }else if color == 1{
+            self.view.backgroundColor=UIColor.black
+            color = 0
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
